@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Frostborn Shop — крамниця в Їжака, сервер CIS: броня, ресурси, зілля, баффи, скрині та ключі. Замовлення через Telegram.">
+<title>Frostborn Shop — сервер CIS</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header><div class="hw">
+  <button type="button" id="mb" aria-label="Відкрити каталог">☰ Каталог</button>
+  <div class="lg"><b>❄️ Frostborn Shop</b><span>Крамниця в Їжака 🦔 · сервер CIS</span></div>
+  <input id="q" type="search" placeholder="Знайти товар…" aria-label="Пошук за товарами" autocomplete="off">
+  <label id="pw"><input type="checkbox" id="pc" checked> Показувати ціни</label>
+  <span id="hs"></span>
+  <button type="button" id="ct" aria-label="Кошик">🛒<span id="cnt"></span></button>
+  <button type="button" id="th" aria-label="Тема"></button>
+</div></header>
+<div id="cart"><div class="ci"><div id="cd"></div></div></div>
+<div class="wrap"><aside id="cat" aria-label="Каталог"></aside>
+<div class="mc"><div id="bc" class="bc"></div>
+<div id="sortbar" class="sortbar" hidden><span>Сортування:</span><button type="button" data-s="default">За замовчуванням</button><button type="button" data-s="asc">Спочатку дешевші</button><button type="button" data-s="desc">Спочатку дорожчі</button></div>
+<div id="main"></div><div id="rep" hidden></div>
+<p id="none" hidden>Нічого не знайдено. Спробуйте інше слово.</p></div></div>
+<div id="ov"></div>
+<script src="data/catalog.js"></script>
+<script src="data/repair.js"></script>
+<script src="js/core.js"></script>
+<script src="js/models.js"></script>
+<script src="js/services.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
